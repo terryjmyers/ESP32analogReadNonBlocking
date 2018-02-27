@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>ESP32analogReadNonBlocking</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ESP32analogReadNonBlocking;$(ProjectDir)..\..\src;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\libraries;$(ProjectDir)..\..\..\..\libraries;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\cores\esp32;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\cores\esp32\libb64;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\variants\lolin32;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\config;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\bluedroid;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\app_trace;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\app_update;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\bootloader_support;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\bt;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\driver;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\esp32;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\esp_adc_cal;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\ethernet;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\fatfs;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\freertos;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\heap;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\jsmn;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\log;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\mdns;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\mbedtls;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\mbedtls_port;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\newlib;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\nvs_flash;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\openssl;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\soc;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\spi_flash;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\sdmmc;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\spiffs;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\tcpip_adapter;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\ulp;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\vfs;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\wear_levelling;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\xtensa-debug-module;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\console;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\coap;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\wpa_supplicant;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\expat;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\json;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\nghttp;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\lwip;C:\Users\tmyers\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include\c++\4.8.2;C:\Users\tmyers\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include\c++\4.8.2\xtensa-lx106-elf;C:\Users\tmyers\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include;C:\Users\tmyers\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\lib\gcc\xtensa-lx106-elf\4.8.2\include;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.ESP32analogReadNonBlocking.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__ESP32_ESp32__;__ESP32_ESP32__;_VMDEBUG=1;ESP_PLATFORM;HAVE_CONFIG_H;F_CPU=240000000L;ARDUINO=10804;ARDUINO_LOLIN32;ARDUINO_ARCH_ESP32;ESP32;CORE_DEBUG_LEVEL=0;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ESP32analogReadNonBlocking;$(ProjectDir)..\..\src;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\libraries;$(ProjectDir)..\..\..\..\libraries;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\cores\esp32;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\cores\esp32\libb64;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\variants\lolin32;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\config;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\bluedroid;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\app_trace;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\app_update;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\bootloader_support;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\bt;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\driver;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\esp32;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\esp_adc_cal;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\ethernet;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\fatfs;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\freertos;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\heap;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\jsmn;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\log;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\mdns;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\mbedtls;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\mbedtls_port;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\newlib;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\nvs_flash;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\openssl;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\soc;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\spi_flash;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\sdmmc;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\spiffs;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\tcpip_adapter;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\ulp;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\vfs;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\wear_levelling;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\xtensa-debug-module;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\console;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\coap;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\wpa_supplicant;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\expat;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\json;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\nghttp;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include\lwip;C:\Users\tmyers\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include\c++\4.8.2;C:\Users\tmyers\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include\c++\4.8.2\xtensa-lx106-elf;C:\Users\tmyers\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include;C:\Users\tmyers\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\lib\gcc\xtensa-lx106-elf\4.8.2\include;C:\Program Files (x86)\Arduino\hardware\espressif\esp32\tools\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.ESP32analogReadNonBlocking.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__ESP32_ESp32__;__ESP32_ESP32__;ESP_PLATFORM;HAVE_CONFIG_H;F_CPU=240000000L;ARDUINO=10804;ARDUINO_LOLIN32;ARDUINO_ARCH_ESP32;ESP32;CORE_DEBUG_LEVEL=0;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ESP32analogReadNonBlocking.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.ESP32analogReadNonBlocking.vsarduino.h" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

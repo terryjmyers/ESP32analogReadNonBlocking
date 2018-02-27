@@ -1,0 +1,13 @@
+{
+  "name": "ESP32analogReadNonBlocking by Terry Myers",
+  "keywords": "ESP32 analogRead ",
+  "description": "Non-blocking analogRead Function multiple sample averaging",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/terryjmyers/ESP32analogReadNonBlocking"
+  },
+  "frameworks": "arduino",
+  "platforms": "esp32"
+}
+

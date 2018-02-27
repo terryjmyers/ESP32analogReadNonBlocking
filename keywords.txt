@@ -1,0 +1,14 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+ESP32analogReadNonBlocking	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+newValueFlag	KEYWORD2
+tick	KEYWORD2
